@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VeriSky — Privacy Policy</title>
+  <title>VeriSky Privacy Policy</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #222; }
     h1 { font-size: 24px; }
@@ -15,47 +15,58 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: February 16, 2026</p>
+  <p class="updated">Last updated: July 25, 2026</p>
 
   <h2>Overview</h2>
-  <p>VeriSky is a weather forecast comparison app. Your privacy is important to us. This policy explains what data VeriSky collects, how it is used, and your choices regarding that data.</p>
+  <p>VeriSky is a weather forecast comparison app. It works without an account, and it never asks for your name, email address, or any other personal detail. This policy explains what the app keeps on your device, what leaves your device, and what our server does with it.</p>
 
   <h2>Data We Collect</h2>
-  <p>VeriSky stores the following data locally on your device only:</p>
+  <p>VeriSky stores the following on your device only, and never uploads it to us:</p>
   <ul>
     <li>Your saved locations (name and coordinates)</li>
     <li>Verification reports you create (timestamp, location coordinates, forecast values, and your notes)</li>
-    <li>Your app preferences (units, chart layers, ghost line settings)</li>
-    <li>Cached weather API responses (to reduce network usage)</li>
+    <li>Your app preferences (units, chart layers, activity settings, text size)</li>
+    <li>Cached weather responses, so the app uses less data</li>
   </ul>
+  <p>We do not ask for or receive any identifier that would let us recognise you or your device: no account, no login, no device identifier, and no advertising identifier.</p>
 
   <h2>Location Data</h2>
-  <p>VeriSky requests access to your device location only when you choose "Current Location." Your coordinates are used to fetch weather forecasts from third-party weather APIs. Location data is stored locally on your device as part of saved locations and verification reports. VeriSky does not transmit your location to any server we operate.</p>
+  <p>VeriSky asks for your device location only when you choose "Current Location." Your coordinates are used to fetch forecasts, and are kept on your device as part of saved locations and verification reports. When the app requests a forecast, the coordinates for that request are sent to our server, which rounds them to a grid cell of roughly 11 km and serves the forecast for that cell. What is stored on our side therefore describes an area, not an address, and it carries nothing that identifies you.</p>
 
-  <h2>Third-Party Services</h2>
-  <p>VeriSky retrieves weather data from the following third-party APIs. When you request a forecast, your selected location coordinates are sent to these services:</p>
+  <h2>The VeriSky Server</h2>
+  <p>Forecast requests go through a server we operate. It collects model data, keeps forecasts and observations for grid cells, and computes the accuracy scores the app shows you. Because requests contain no account or device identifier, they cannot be linked to you, to your phone, or to each other.</p>
+  <p>Like any web service, our server keeps standard request logs, which include the IP address the request came from, so we can operate the service, protect it from abuse, and count usage in aggregate. We do not use these logs to build profiles, and we do not sell or share them.</p>
+
+  <h2>Subscriptions and VeriSky Pro</h2>
+  <p>Purchases are processed by the App Store or Google Play. We never see your payment details. To unlock paid data, the app exchanges the store's proof of purchase for a short-lived access token. That token confirms only that a valid subscription exists; it carries no name, email address, or account.</p>
+  <p>If you use Pro tracked locations, the grid cells you nominate are stored on our server while your subscription keeps them active, so that forecasts can be collected and verified there over time. They are stored as coordinates only, with no identifier attached, and they stop being tracked once they are no longer renewed.</p>
+
+  <h2>Weather Data and Other Services</h2>
+  <p>Forecasts, observations and radar data come from the following sources. Except where noted, our server makes these requests using grid coordinates, so your device never contacts them directly and nothing about you is included:</p>
   <ul>
-    <li><a href="https://open-meteo.com">Open-Meteo</a> — open-source weather API</li>
-    <li><a href="https://stormglass.io">Stormglass</a> — used as a fallback for AIFS model data</li>
+    <li><a href="https://open-meteo.com">Open-Meteo</a>, open-source weather API, and the national weather services whose models it distributes</li>
+    <li>Commercial forecast providers used for comparison in VeriSky Pro: Apple Weather (via WeatherKit), <a href="https://openweathermap.org">OpenWeatherMap</a> and <a href="https://www.visualcrossing.com">Visual Crossing</a></li>
+    <li>Radar and observation networks, including EUMETNET OPERA, NOAA MRMS and aviationweather.gov</li>
+    <li><a href="https://openfreemap.org">OpenFreeMap</a>, which provides map backgrounds. These tiles are loaded by the app directly, so OpenFreeMap receives the map area you are looking at</li>
   </ul>
-  <p>These services have their own privacy policies. We encourage you to review them. VeriSky does not share any personal information with these services beyond the location coordinates needed to retrieve forecasts.</p>
+  <p>Each of these services has its own privacy policy, and we encourage you to review them. We do not share any personal information with them, because we do not have any.</p>
 
   <h2>Data Storage</h2>
-  <p>All data is stored locally on your device. No data is uploaded to any server we control. We do not operate any backend servers or databases that store your information.</p>
+  <p>Everything personal to you, your saved locations, reports and preferences, stays on your device. What our server stores is weather data for grid cells, plus the request logs and tracked cells described above. None of it is tied to your identity.</p>
 
   <h2>Data Deletion</h2>
-  <p>You are in full control of your data. You can delete your verification reports and cached data at any time from the Settings screen. Uninstalling the app removes all stored data from your device.</p>
+  <p>You can delete your verification reports and cached data at any time from the Settings screen, and uninstalling the app removes everything it stored on your device. Removing a tracked location in the app stops it being tracked on our server, and tracked cells expire on their own once a subscription no longer renews them. Server request logs are kept only briefly and then discarded.</p>
 
   <h2>Analytics &amp; Tracking</h2>
-  <p>VeriSky does not include any analytics, crash reporting, or advertising SDKs. We do not track your usage or behavior within the app.</p>
+  <p>VeriSky includes no analytics, crash reporting, or advertising SDKs, and does not track you across other apps or websites. The usage figures we do look at are counted from the server request logs described above, in aggregate only.</p>
 
   <h2>Children's Privacy</h2>
   <p>VeriSky does not knowingly collect personal information from children under 13. The app does not require account creation or any personal information to function.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>We may update this privacy policy from time to time. Any changes will be reflected in the app with an updated "Last updated" date.</p>
+  <p>We may update this privacy policy from time to time. Any changes will appear on this page and in the app with an updated "Last updated" date.</p>
 
   <h2>Contact</h2>
-  <p>If you have questions about this privacy policy, please contact us via the app's store listing page.</p>
+  <p>If you have questions about this privacy policy, email us at <a href="mailto:support@verisky.app">support@verisky.app</a>.</p>
 </body>
 </html>
