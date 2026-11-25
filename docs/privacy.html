@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 25, 2026</p>
+  <p class="updated">Last updated: November 25, 2026</p>
 
   <h2>Overview</h2>
   <p>VeriSky is a weather forecast comparison app. It works without an account, and it never asks for your name, email address, or any other personal detail. This policy explains what the app keeps on your device, what leaves your device, and what our server does with it.</p>
@@ -31,7 +31,11 @@
   <p>We do not ask for or receive any identifier that would let us recognise you or your device: no account, no login, no device identifier, and no advertising identifier.</p>
 
   <h2>Location Data</h2>
-  <p>VeriSky asks for your device location only when you choose "Current Location." Your coordinates are used to fetch forecasts, and are kept on your device as part of saved locations and verification reports. When the app requests a forecast, the coordinates for that request are sent to our server, which rounds them to a grid cell of roughly 11 km and serves the forecast for that cell. What is stored on our side therefore describes an area, not an address, and it carries nothing that identifies you.</p>
+  <p>VeriSky asks for your device location when you choose "Current Location." On iPhone it asks for location access "Always" only if you turn on a rain watch that keeps following you while the app is closed (see Rain Watch below). Your coordinates are used to fetch forecasts, and are kept on your device as part of saved locations and verification reports. When the app requests a forecast, the coordinates for that request are sent to our server, which rounds them to a grid cell of roughly 11 km and serves the forecast for that cell. What is stored on our side therefore describes an area, not an address, and it carries nothing that identifies you.</p>
+
+  <h2>Rain Watch (iPhone)</h2>
+  <p>On iPhone, a rain watch shows rain and lightning near you on the Lock Screen. To start one, the app sends our server the area you are in, a grid cell of roughly 11 km, never your exact position, and the watch then receives that cell's rain updates through Apple's push service. Our server keeps which cells have a watch running, for as long as a watch lasts, and nothing about who asked.</p>
+  <p>If you turn on "Keep following me when VeriSky is closed", the app asks for location access "Always". While a watch is running, your iPhone then wakes VeriSky after you have moved about 2 km. When you have reached a new cell, the app sends our server that cell and a start code from Apple, so the server can start the watch there. The server starts it at once and keeps no record of the request: the cell and the code are not stored, and the request is left out of the server logs. Your exact position does not leave your iPhone for this.</p>
 
   <h2>The VeriSky Server</h2>
   <p>Forecast requests go through a server we operate. It collects model data, keeps forecasts and observations for grid cells, and computes the accuracy scores the app shows you. Because requests contain no account or device identifier, they cannot be linked to you, to your phone, or to each other.</p>
